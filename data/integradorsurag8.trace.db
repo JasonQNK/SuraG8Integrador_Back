@@ -468,3 +468,67 @@ Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Back_End1_/Su
 	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
 	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
 	... 59 more
+2026-02-21 15:05:47.141074-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT * FROM NOTAS NOTAS [*]USUARIOS"
+Syntax error in SQL statement "SELECT * FROM NOTAS NOTAS [*]USUARIOS"; SQL statement:
+SELECT * FROM NOTAS NOTAS USUARIOS [42000-240]
+2026-02-21 19:29:13.453365-05:00 jdbc[22]: exception
+org.h2.jdbc.JdbcSQLDataException: Valor demasiado largo para la columna "DESCRIPCION CHARACTER VARYING(255)": "U&'El curso de Introducci\\00f3n a la Programaci\\00f3n tiene como objetivo propor... (465)"
+Value too long for column "DESCRIPCION CHARACTER VARYING(255)": "U&'El curso de Introducci\\00f3n a la Programaci\\00f3n tiene como objetivo propor... (465)"; SQL statement:
+insert into cursos (calificacion,capitulos_curso,comentarios,descripcion,duracion,estudiantes,fecha_creacion,fecha_finalizacion,intensidad,lugar_realizacion,maestro,presencialidad,tipo_curso,titulo,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,default) [22001-240]
+2026-02-21 19:35:40.575126-05:00 jdbc[24]: exception
+org.h2.jdbc.JdbcSQLDataException: Valor demasiado largo para la columna "DESCRIPCION CHARACTER VARYING(255)": "U&'Este curso tiene como objetivo desarrollar el pensamiento anal\\00edtico y la ... (333)"
+Value too long for column "DESCRIPCION CHARACTER VARYING(255)": "U&'Este curso tiene como objetivo desarrollar el pensamiento anal\\00edtico y la ... (333)"; SQL statement:
+insert into cursos (calificacion,capitulos_curso,comentarios,descripcion,duracion,estudiantes,fecha_creacion,fecha_finalizacion,intensidad,lugar_realizacion,maestro,presencialidad,tipo_curso,titulo,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,default) [22001-240]
+2026-02-21 19:36:12.014264-05:00 jdbc[24]: exception
+org.h2.jdbc.JdbcSQLDataException: Valor demasiado largo para la columna "DESCRIPCION CHARACTER VARYING(255)": "U&'Este curso tiene como objetivo desarrollar el pensamiento anal\\00edtico y la ... (314)"
+Value too long for column "DESCRIPCION CHARACTER VARYING(255)": "U&'Este curso tiene como objetivo desarrollar el pensamiento anal\\00edtico y la ... (314)"; SQL statement:
+insert into cursos (calificacion,capitulos_curso,comentarios,descripcion,duracion,estudiantes,fecha_creacion,fecha_finalizacion,intensidad,lugar_realizacion,maestro,presencialidad,tipo_curso,titulo,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,default) [22001-240]
+2026-02-21 19:36:15.471456-05:00 jdbc[24]: exception
+org.h2.jdbc.JdbcSQLDataException: Valor demasiado largo para la columna "DESCRIPCION CHARACTER VARYING(255)": "U&'Este curso tiene como objetivo desarrollar el pensamiento anal\\00edtico y la ... (314)"
+Value too long for column "DESCRIPCION CHARACTER VARYING(255)": "U&'Este curso tiene como objetivo desarrollar el pensamiento anal\\00edtico y la ... (314)"; SQL statement:
+insert into cursos (calificacion,capitulos_curso,comentarios,descripcion,duracion,estudiantes,fecha_creacion,fecha_finalizacion,intensidad,lugar_realizacion,maestro,presencialidad,tipo_curso,titulo,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,default) [22001-240]
+2026-02-21 19:36:34.430480-05:00 jdbc[24]: exception
+org.h2.jdbc.JdbcSQLDataException: Valor demasiado largo para la columna "DESCRIPCION CHARACTER VARYING(255)": "U&'Este curso tiene como objetivo desarrollar el pensamiento anal\\00edtico y la ... (299)"
+Value too long for column "DESCRIPCION CHARACTER VARYING(255)": "U&'Este curso tiene como objetivo desarrollar el pensamiento anal\\00edtico y la ... (299)"; SQL statement:
+insert into cursos (calificacion,capitulos_curso,comentarios,descripcion,duracion,estudiantes,fecha_creacion,fecha_finalizacion,intensidad,lugar_realizacion,maestro,presencialidad,tipo_curso,titulo,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,default) [22001-240]
+2026-02-21 19:36:44.045194-05:00 jdbc[24]: exception
+org.h2.jdbc.JdbcSQLDataException: Valor demasiado largo para la columna "DESCRIPCION CHARACTER VARYING(255)": "U&'Este curso tiene como objetivo desarrollar el pensamiento anal\\00edtico y la ... (299)"
+Value too long for column "DESCRIPCION CHARACTER VARYING(255)": "U&'Este curso tiene como objetivo desarrollar el pensamiento anal\\00edtico y la ... (299)"; SQL statement:
+insert into cursos (calificacion,capitulos_curso,comentarios,descripcion,duracion,estudiantes,fecha_creacion,fecha_finalizacion,intensidad,lugar_realizacion,maestro,presencialidad,tipo_curso,titulo,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,default) [22001-240]
+2026-02-21 19:36:44.789865-05:00 jdbc[24]: exception
+org.h2.jdbc.JdbcSQLDataException: Valor demasiado largo para la columna "DESCRIPCION CHARACTER VARYING(255)": "U&'Este curso tiene como objetivo desarrollar el pensamiento anal\\00edtico y la ... (299)"
+Value too long for column "DESCRIPCION CHARACTER VARYING(255)": "U&'Este curso tiene como objetivo desarrollar el pensamiento anal\\00edtico y la ... (299)"; SQL statement:
+insert into cursos (calificacion,capitulos_curso,comentarios,descripcion,duracion,estudiantes,fecha_creacion,fecha_finalizacion,intensidad,lugar_realizacion,maestro,presencialidad,tipo_curso,titulo,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,default) [22001-240]
+2026-02-21 19:36:44.991803-05:00 jdbc[24]: exception
+org.h2.jdbc.JdbcSQLDataException: Valor demasiado largo para la columna "DESCRIPCION CHARACTER VARYING(255)": "U&'Este curso tiene como objetivo desarrollar el pensamiento anal\\00edtico y la ... (299)"
+Value too long for column "DESCRIPCION CHARACTER VARYING(255)": "U&'Este curso tiene como objetivo desarrollar el pensamiento anal\\00edtico y la ... (299)"; SQL statement:
+insert into cursos (calificacion,capitulos_curso,comentarios,descripcion,duracion,estudiantes,fecha_creacion,fecha_finalizacion,intensidad,lugar_realizacion,maestro,presencialidad,tipo_curso,titulo,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,default) [22001-240]
+2026-02-21 19:36:47.237755-05:00 jdbc[24]: exception
+org.h2.jdbc.JdbcSQLDataException: Valor demasiado largo para la columna "DESCRIPCION CHARACTER VARYING(255)": "U&'Este curso tiene como objetivo desarrollar el pensamiento anal\\00edtico y la ... (299)"
+Value too long for column "DESCRIPCION CHARACTER VARYING(255)": "U&'Este curso tiene como objetivo desarrollar el pensamiento anal\\00edtico y la ... (299)"; SQL statement:
+insert into cursos (calificacion,capitulos_curso,comentarios,descripcion,duracion,estudiantes,fecha_creacion,fecha_finalizacion,intensidad,lugar_realizacion,maestro,presencialidad,tipo_curso,titulo,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,default) [22001-240]
+2026-02-21 19:48:51.200026-05:00 jdbc[35]: null
+org.h2.message.DbException: La conexión no fue cerrada por la aplicación y esta siendo limpiada (garbage collected)
+The connection was not closed by the application and is garbage collected [90018-240]
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:217)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:134)
+	at org.h2.Driver.connect(Driver.java:59)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:373)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:210)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:752)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:731)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: La conexión no fue cerrada por la aplicación y esta siendo limpiada (garbage collected)
+The connection was not closed by the application and is garbage collected [90018-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:690)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 16 more
