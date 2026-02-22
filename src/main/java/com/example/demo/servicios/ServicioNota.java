@@ -6,6 +6,7 @@ import com.example.demo.repositorios.IRepositorioNota;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
@@ -22,6 +23,8 @@ public class ServicioNota {
         if (datos.getNota() < 0 || datos.getNota() > 5) {
             throw  new Exception("La nota debe estar entre 0 y 5");
         }
+
+        datos.setFechaExamen(LocalDate.now());
         return this.repositorio.save(datos);
     }
 
