@@ -4,33 +4,13 @@ import jakarta.persistence.*;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+// ✅ LIMPIADO: eliminadas las anotaciones @NamedStoredProcedureQueries y
+//    @NamedStoredProcedureQuery que referenciaban procedimientos almacenados
+//    inexistentes en H2. La entidad queda limpia igual que Profesor.java,
+//    Curso.java, Reporte.java, etc.
+
 @Entity
 @Table(name = "asistencia")
-@NamedStoredProcedureQueries({
-        @NamedStoredProcedureQuery(
-                name = "Asistencia.crear",
-                procedureName = "crear_asistencia",
-                parameters = {
-                        @StoredProcedureParameter(mode = ParameterMode.IN, name = "nombre", type = String.class),
-                        @StoredProcedureParameter(mode = ParameterMode.IN, name = "fecha", type = LocalDate.class),
-                        @StoredProcedureParameter(mode = ParameterMode.IN, name = "hora", type = LocalTime.class),
-                        @StoredProcedureParameter(mode = ParameterMode.IN, name = "asistio", type = Boolean.class)
-                }
-        ),
-        @NamedStoredProcedureQuery(
-                name = "Asistencia.listar",
-                procedureName = "listar_asistencias",
-                resultClasses = Asistencia.class
-        ),
-        @NamedStoredProcedureQuery(
-                name = "Asistencia.buscarPorId",
-                procedureName = "buscar_asistencia_por_id",
-                parameters = {
-                        @StoredProcedureParameter(mode = ParameterMode.IN, name = "pid", type = Integer.class)
-                },
-                resultClasses = Asistencia.class
-        )
-})
 public class Asistencia {
 
     @Id
@@ -49,49 +29,22 @@ public class Asistencia {
     @Column(nullable = false)
     private Boolean asistio;
 
-    // 🔹 CONSTRUCTOR VACÍO (OBLIGATORIO JPA)
-    public Asistencia() {
-    }
+    // Constructor vacío obligatorio para JPA
+    public Asistencia() {}
 
-    // 🔹 GETTERS Y SETTERS (OBLIGATORIOS)
-    public Integer getId() {
-        return id;
-    }
+    // Getters y Setters
+    public Integer getId() { return id; }
+    public void setId(Integer id) { this.id = id; }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
+    public String getNombrePersona() { return nombrePersona; }
+    public void setNombrePersona(String nombrePersona) { this.nombrePersona = nombrePersona; }
 
-    public String getNombrePersona() {
-        return nombrePersona;
-    }
+    public LocalDate getFecha() { return fecha; }
+    public void setFecha(LocalDate fecha) { this.fecha = fecha; }
 
-    public void setNombrePersona(String nombrePersona) {
-        this.nombrePersona = nombrePersona;
-    }
+    public LocalTime getHoraEntrada() { return horaEntrada; }
+    public void setHoraEntrada(LocalTime horaEntrada) { this.horaEntrada = horaEntrada; }
 
-    public LocalDate getFecha() {
-        return fecha;
-    }
-
-    public void setFecha(LocalDate fecha) {
-        this.fecha = fecha;
-    }
-
-    public LocalTime getHoraEntrada() {
-        return horaEntrada;
-    }
-
-    public void setHoraEntrada(LocalTime horaEntrada) {
-        this.horaEntrada = horaEntrada;
-    }
-
-    public Boolean getAsistio() {
-        return asistio;
-    }
-
-    public void setAsistio(Boolean asistio) {
-        this.asistio = asistio;
-    }
+    public Boolean getAsistio() { return asistio; }
+    public void setAsistio(Boolean asistio) { this.asistio = asistio; }
 }
-

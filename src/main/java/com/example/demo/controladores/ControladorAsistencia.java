@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/apisurag8/v1/asistencias")
+@RequestMapping("/apisura8/v1/asistencias")
 @CrossOrigin(origins = "http://localhost:3000")
 public class ControladorAsistencia {
 
@@ -33,7 +33,7 @@ public class ControladorAsistencia {
         return ResponseEntity.ok(service.obtenerTodas());
     }
 
-    @GetMapping("/w{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<?> buscarPorId(@PathVariable Integer id) {
         try {
             return ResponseEntity.ok(service.obtenerPorId(id));

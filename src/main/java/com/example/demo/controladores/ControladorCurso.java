@@ -9,15 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/apisura8/v1/cursos")
-
-// ✅ CORREGIDO: ampliado para cubrir CRA (:3000) y Vite (:5173)
-@CrossOrigin(origins = {
-    "http://localhost:3000",
-    "http://localhost:3001",
-    "http://localhost:5173",
-    "http://127.0.0.1:3000",
-    "http://127.0.0.1:5173"
-})
+@CrossOrigin("http://localhost:3000")
 public class ControladorCurso {
 
     @Autowired

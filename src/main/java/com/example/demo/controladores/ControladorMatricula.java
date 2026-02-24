@@ -8,7 +8,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/apisurag8/v1/matriculas")
+@RequestMapping("/apisura8/v1/matriculas")
+@CrossOrigin("http://localhost:3000")
 public class ControladorMatricula {
 
     //Inyectamos la dependencia
